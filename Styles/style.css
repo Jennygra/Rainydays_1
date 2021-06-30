@@ -1,0 +1,103 @@
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/* Overaall styling */
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0;
+}
+
+/* HEADER */
+.annoucment {
+  background-color: #c95613;
+  color: white;
+  margin: auto;
+  text-transform: capitalize;
+  text-align: center;
+  font: normal normal bold 15px/21px Roboto Condensed;
+  padding: 5px;
+}
+
+.header_logo {
+  max-width: 110px;
+  height: auto;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font: italic normal bold 20px/26px Roboto Condensed;
+  color: #0a3641;
+}
+
+nav a {
+  color: #0a3641;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c95613;
+  text-decoration: underline;
+}
+
+nav li {
+  padding: 20px;
+}
+
+.navigation {
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header_logo {
+    max-width: 90px;
+  }
+
+  nav,
+  #hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-label {
+    float: right;
+    color: #0a3641;
+    padding: 6px;
+    display: block;
+    font-size: 2em;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  nav ul {
+    all: unset;
+    display: block;
+    list-style: none;
+    text-align: center;
+    background: #e8f4ff;
+  }
+
+  nav a {
+    font: italic normal bold 10px/16px Roboto Condensed;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger-label,
+  #hamburger-menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+  }
+}
