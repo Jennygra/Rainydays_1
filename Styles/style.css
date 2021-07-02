@@ -56,13 +56,25 @@ nav li {
   margin: 20px;
 }
 
+.header-icons {
+  position: absolute;
+  right: 2em;
+}
+
+.header-icons img {
+  max-width: 20px;
+  height: auto;
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .header_logo {
     max-width: 90px;
   }
 
   nav,
-  #hamburger-menu {
+  #hamburger-menu,
+  .header-icons {
     display: none;
   }
 
@@ -100,4 +112,64 @@ nav li {
   .navigation {
     display: flex;
   }
+}
+
+/* FOOTER */
+footer {
+  background: transparent
+    linear-gradient(180deg, #187a9300 0%, #13617568 96%, #0c3d4a 100%) 0% 0%
+    no-repeat padding-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+
+h5 {
+  font: italic normal bold 27px/35px Roboto Condensed;
+  color: #0a3641;
+  text-decoration: underline;
+}
+
+.custom-service-options ul {
+  list-style: none;
+  font: normal normal bold 15px/21px Roboto Condensed;
+}
+
+.custom-service-options a {
+  text-decoration: none;
+  color: #0a3641;
+}
+
+.custom-service-options a:hover {
+  text-decoration: underline;
+}
+
+.about-us-footer p {
+  max-width: 400px;
+  font: normal normal normal 15px/19px Roboto Condensed;
+  color: #0a3641;
+}
+
+.about-us-footer a {
+  text-decoration: none;
+  border: 2px solid #0a3641;
+  font: normal normal bold 12px/15px Roboto Condensed;
+  color: #0a3641;
+  padding: 3px 15px;
+  border-radius: 50px;
+}
+
+.copyright-footer {
+  color: white;
+  font: normal normal bold 12px/15px Roboto Condensed;
+}
+
+.footer-logo {
+  align-content: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 5em;
 }
