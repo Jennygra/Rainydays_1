@@ -1,6 +1,5 @@
 /*-----------------------------------------*/
 /*-----------------------------------------*/
-/* Overaall styling */
 body,
 ul,
 p,
@@ -122,17 +121,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 5em;
+  justify-content: center;
 }
 
 h5 {
   font: italic normal bold 27px/35px Roboto Condensed;
   color: #0a3641;
   text-decoration: underline;
+  margin: 0;
 }
 
 .custom-service-options ul {
   list-style: none;
   font: normal normal bold 15px/21px Roboto Condensed;
+  padding: 0;
 }
 
 .custom-service-options a {
@@ -144,7 +146,9 @@ h5 {
   text-decoration: underline;
 }
 
-.about-us-footer p {
+.about-us-footer p,
+.footer_update p,
+.footer_update label {
   max-width: 400px;
   font: normal normal normal 15px/19px Roboto Condensed;
   color: #0a3641;
@@ -162,14 +166,193 @@ h5 {
 .copyright-footer {
   color: white;
   font: normal normal bold 12px/15px Roboto Condensed;
-}
-
-.footer-logo {
-  align-content: center;
+  text-transform: uppercase;
 }
 
 .footer-logo img {
   max-width: 100px;
   height: auto;
   margin-bottom: 5em;
+  justify-content: center;
+}
+
+.footer_update input {
+  border: 3px solid var(--unnamed-color-0a3641);
+  box-shadow: 0px 3px 6px #00000029;
+  border: 2px solid #0a3641;
+  border-radius: 50px;
+}
+
+.footer_update button {
+  border: 2px solid #0a3641;
+  border-radius: 50px;
+  font: normal normal bold 10px/13px Roboto Condensed;
+  color: #de7c44;
+  text-transform: uppercase;
+}
+
+.footer_update i {
+  padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    gap: 1em;
+  }
+
+  .custom-service-options,
+  .about-us-footer,
+  .footer_update {
+    margin: 1em;
+  }
+
+  .copyright-footer {
+    display: none;
+  }
+}
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/* HOMEPAGE */
+
+.homepage-bander {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.homepage-bander img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font: italic normal bold 70px/90px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #187a93;
+  text-shadow: 0px 3px 6px #de7c4480;
+  text-transform: uppercase;
+  align-content: center;
+}
+
+.custom-promises-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 3em 1em;
+}
+
+h2 {
+  font: normal normal bold 16px/22px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #44a6de;
+  text-transform: uppercase;
+}
+
+.custom-promises-thumbnails {
+  text-align: center;
+}
+
+.custom-promises-thumbnails p {
+  font: normal normal normal 15px/19px Roboto Condensed;
+  color: #0a3641;
+}
+
+.shop-men-women-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0em;
+  padding: 2em;
+}
+
+.shop-men-women img {
+  max-width: 500px;
+}
+
+.shop-men-women p {
+  text-align: center;
+  text-transform: uppercase;
+  font: normal normal bold 26px/32px Roboto Condensed;
+}
+
+.shop-men-women a {
+  text-decoration: none;
+  color: #0a3641;
+}
+
+.animated-jacket-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.animated-jacket-container img {
+  max-width: 1080px;
+}
+
+.homepage-feature-collection-contaner {
+  margin: 5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.homepage-feature-collection-contaner h3 {
+  grid-column: -1/1;
+  text-align: center;
+  margin: 1em;
+  color: var(--unnamed-color-187a93);
+  font: italic normal bold 40px/51px Roboto Condensed;
+  color: #187a93;
+}
+
+.feature-collection {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-collection img {
+  max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+
+  .homepage-bander {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homepage-bander img {
+    max-width: 100%;
+  }
+
+  .custom-promises-icon img {
+    max-width: 50%;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  .custom-promises-thumbnails p {
+    font-size: 10px;
+  }
+
+  .shop-men-women-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .shop-men-women img {
+    max-width: 300px;
+  }
+
+  .shop-men-women p {
+    font-size: 16px;
+  }
+
+  .feature-collection img {
+    max-width: 100%;
+  }
 }
