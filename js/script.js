@@ -81,9 +81,7 @@ for(let i = 0; i < productData.length; i++) {
     </div>
     </div>
     `;
-    
 }
-
 
 
 const seeMoreBtn = document.querySelector(".seeMoreBtn"); 
