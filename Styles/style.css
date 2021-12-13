@@ -118,10 +118,19 @@ footer {
   background: transparent
     linear-gradient(180deg, #187a9300 0%, #13617568 96%, #0c3d4a 100%) 0% 0%
     no-repeat padding-box;
+}
+
+.footerBackground {
+  width: 100%;
+}
+
+.footerContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 5em;
   justify-content: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 h5 {
@@ -167,6 +176,8 @@ h5 {
   color: white;
   font: normal normal bold 12px/15px Roboto Condensed;
   text-transform: uppercase;
+  position: absolute;
+  margin: 300px 1000px 0px 0px;
 }
 
 .footer-logo img {
@@ -195,15 +206,17 @@ h5 {
   padding: 1em;
 }
 
-@media screen and (max-width: 768px) {
-  footer {
-    gap: 1em;
-  }
+.error-message {
+  display: none;
+  font-size: 10px;
+  color: red;
+}
 
+@media screen and (max-width: 768px) {
   .custom-service-options,
   .about-us-footer,
   .footer_update {
-    margin: 1em;
+    margin: 0px 10px;
   }
 
   .copyright-footer {
@@ -232,6 +245,22 @@ h1 {
   text-shadow: 0px 3px 6px #de7c4480;
   text-transform: uppercase;
   align-content: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+
+  .homepage-bander {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homepage-bander img {
+    max-width: 100%;
+  }
 }
 
 .custom-promises-icon {
@@ -258,6 +287,20 @@ h2 {
   color: #0a3641;
 }
 
+@media screen and (max-width: 768px) {
+  .custom-promises-icon img {
+    max-width: 40%;
+  }
+
+  h2 {
+    font-size: 11px;
+  }
+
+  .custom-promises-thumbnails p {
+    font-size: 9px;
+  }
+}
+
 .shop-men-women-container {
   display: flex;
   justify-content: space-around;
@@ -280,65 +323,7 @@ h2 {
   color: #0a3641;
 }
 
-.animated-jacket-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.animated-jacket-container img {
-  max-width: 1080px;
-}
-
-.homepage-feature-collection-contaner {
-  margin: 5em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.homepage-feature-collection-contaner h3 {
-  grid-column: -1/1;
-  text-align: center;
-  margin: 1em;
-  color: var(--unnamed-color-187a93);
-  font: italic normal bold 40px/51px Roboto Condensed;
-  color: #187a93;
-}
-
-.feature-collection {
-  display: flex;
-  flex-direction: column;
-}
-
-.feature-collection img {
-  max-width: 200px;
-}
-
 @media screen and (max-width: 768px) {
-  h1 {
-    display: none;
-  }
-
-  .homepage-bander {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .homepage-bander img {
-    max-width: 100%;
-  }
-
-  .custom-promises-icon img {
-    max-width: 50%;
-  }
-
-  h2 {
-    font-size: 13px;
-  }
-
-  .custom-promises-thumbnails p {
-    font-size: 10px;
-  }
-
   .shop-men-women-container {
     flex-direction: column;
     gap: 1em;
@@ -351,8 +336,89 @@ h2 {
   .shop-men-women p {
     font-size: 16px;
   }
+}
 
-  .feature-collection img {
+.animated-jacket-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.animated-jacket-container img {
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 768px) {
+  .animated-jacket-container img {
     max-width: 100%;
+  }
+}
+
+.homepage-feature-collection-container {
+  max-width: 1000px;
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+}
+
+.homepage-feature-collection-container h3 {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 1em;
+  color: var(--unnamed-color-187a93);
+  font: italic normal bold 40px/51px Roboto Condensed;
+  color: #187a93;
+}
+
+.feature-collectionCta {
+  flex-basis: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.feature-collection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  justify-content: space-between;
+}
+
+.feature-collection img {
+  max-width: 200px;
+}
+
+.seeMoreBtn {
+  background-color: #0a3641;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage-feature-collection-container h3 {
+    margin: 0;
+  }
+
+  .feature-collection img,
+  .feature-collection {
+    max-width: 150px;
+  }
+
+  .homepage-feature-collection-container {
+    gap: 20px;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+
+  .feature-collection p {
+    font-size: 10px;
+  }
+
+  .likeCta img {
+    max-width: 20px;
   }
 }
