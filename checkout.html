@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <title>Rainydays | Checkout</title>
+        <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="High quality outdoor clothing"/>
+        <link href="Styles/style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0da1880f97.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="Checkout-success-header">
+                <a href="index.html"><img src="Images/RainyDays_Logo.png" alt="Rainydays Logo" class="logo"></a>
+        </header>
+        <main class="checkout-main">
+          <section class="checkout-proccess">
+            <div class="proccess-bar">
+            <img src="Images/Payment-process.png" alt="Payment process - success">
+          </div>
+          </section>
+
+  <section class="checkout-container">
+          <section class="custom-form">
+            <form method="POST" class="checkoutForm">
+
+            <div class="custom-information">
+                <h4> Custom information</h4>
+                <input type="email" id="emailCheckout" required placeholder="Email*" required>
+                <div class="errorMessage" id="emailCheckoutError">Please enter a valid email address</div>
+                </div>
+            </div>
+
+            <div class="shipping-info">
+                <h4>Shipping address</h4>
+                <input type="text" id="fname" placeholder="First name*" class="input-fname" required>
+                <div class="errorMessage" id="fnameError">Please enter your first name</div>
+
+                <input type="text" id="lname" placeholder="Last name*" class="input-lname" required>
+                <div class="errorMessage" id="lnameError">Please enter your last name</div>
+
+                <input type="text" id="address" placeholder="Street Address*" class="input-address" required>
+                <div class="errorMessage" id="addressError">Please enter correct address</div>
+
+                <input type="text" id="city" placeholder="Town / City*" class="input-town"required>
+                <div class="errorMessage" id="cityError">Please enter your town</div>
+
+                <input type="text" id="zip" placeholder="Postcode*" class="input-postcode" required>
+                <div class="errorMessage" id="zipError">Your postcode is incorrect</div>
+
+                <input type="text" id="country" placeholder="Country*" class="input-country" required>
+                <div class="errorMessage" id="countryError">Please enter correct country</div>
+
+                <input type="text" id="state" placeholder="State" class="input-state">
+
+              <div class="checkbox-billing">
+                <input type="checkbox" id="billingaddress" name="billingaddress" placeholder="Use different billing address" class="input-billingaddress">
+
+                <label for="billingaddress" class="billing-label">Use different billing address</label>
+              </div>
+
+                <input type="text" id="phone number" placeholder="Phone (optional)" class="input-phone">
+            </div>
+
+            <div class="cta-to-shipping">
+                <button><a href="checkoutSuccess.html">Continue to shipping</a></button>
+            </div>
+            </form>
+        </section>
+
+      <section class="summary-container">
+           <div class="edit-cart-cta">
+           <a href="cart.html">Edit Cart</a>
+          </div>
+            <section class="cart-product-summary">
+                <div class="cart-product-img">
+                  <img src="Images/collection-page/productlist-product1.jpg" alt="The blue jacket">
+                  </div>
+
+                <div class="cart-product-info">
+                  <p>Blue Jacket</p>
+                  <p>SKU: 10888A123</p>
+                  <p>COLOR: BLUE</p>
+                  <p> SIZE: S</p>
+                  <input type="number" id="quatity" value="1">
+                </div>
+
+                <div class="summary-price">
+                    <p>nok 999</p>
+                </div>
+            </section>
+
+            <section class="amount-summary">
+                <hr>
+                <div class="price-summary">
+                    <p>Sub total</p>
+                    <p>nok 999</p>
+                    <p>Delivery</p>
+                    <p>free</p>
+                    <p>Total</p>
+                    <p>nok 999</p>
+                </div>
+            </section>
+      </section>
+    </section>
+    </main>
+
+        <footer class="terms-rights">
+              <div class="footer-terms">
+                <a href="#">Refund policy</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms of service</a>
+              </div>
+              <div class="footer-rights">
+                Copyright &copy; 2021 RainydaysCheckout - All Rights Reserved 
+              </div>
+            </footer>
+            <script src="js/formValidation.js"></script>
+            <script src="js/script.js"></script>
+    </body>
+</html>

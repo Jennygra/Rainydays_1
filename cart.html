@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <title>Rainydays | Cart</title>
+        <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="High quality outdoor clothing"/>
+        <link href="Styles/style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0da1880f97.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section class="navigation">
+            <a href="index.html"><img src="Images/RainyDays_Logo.png" alt="Rainydays logo" class="header_logo"></a>
+            <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i> </label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="collection.html">Men</a></li>
+                  <li><a href="collection.html">Women</a></li>
+                  <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="contactUs.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+            <img src="Images/header-img-icons/Search-icon.png" alt="Search">
+            <img src="Images/header-img-icons/member-icon.png" alt="Member">
+            <a href="cart.html"><img src="Images/header-img-icons/cart-icon.png" alt="Cart"></a>
+            </div>
+        </header>
+        <main>
+
+            <section class="cart-product-summary">
+                <div class="cart-product-img">
+                    <img src="Images/home-page-img/productlist-product1.jpg" alt="picture of Blue Jacket">
+                </div>
+                <div class="cart-product-info">
+                  <h4>Blue Jacket</h4>
+                  <p>SKU: 10888A123</p>
+                  <p>COLOR: BLUE</p>
+                  <p> SIZE: S</p>
+                  <input type="number" id="quatity" value="1">
+                </div>
+                <div class="summary-price">
+                    <p> Nok 999</p>
+                </div>
+            </section>
+
+            <section class="amount-summary">
+              <div class="discount">
+                <p>Enter your discount code:</p>
+                <input type="text" id="discount-code">
+              </div>
+              <hr>
+              <div class="price-summary">
+                <p>Sub total:</p>
+                <p>nok 999</p>
+                <p>Delivery:</p>
+                <p>free</p>
+                <p>Total:</p>
+                <p>nok 999</p>
+            </div>
+          </section>
+          <section class="Continue-checkout">
+            <a href="checkout.html"><p>Continue to Checkout</p></a>
+            <a href="checkout.html"><img src="Images/cta-next.png" alt="next page"></a>
+          </section>
+
+        </main>
+        <footer>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1945.901" height="241.845" viewBox="0 0 1945.901 241.845" class="footerBackground">
+                <defs>
+                  <filter id="Path_54" x="0" y="0" width="1945.901" height="241.845" filterUnits="userSpaceOnUse">
+                    <feOffset dy="3" input="SourceAlpha"/>
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feFlood flood-color="#de7c44" flood-opacity="0.502"/>
+                    <feComposite operator="in" in2="blur"/>
+                    <feComposite in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_54)">
+                  <path id="Path_54-2" data-name="Path 54" d="M-84.755,20.5H149.775l205.08-217,42.026,86.375,63.225-41.591L655.893,20.5H1843.147" transform="translate(93.75 206.84)" fill="none" stroke="#187a93" stroke-width="5"/>
+                </g>
+              </svg>
+              
+        <div class="footerContainer">
+            <div class="custom-service-options">
+                <h5>Custom service</h5>
+                <ul>
+                  <li><a href="contactUs.html">Contact us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Freight and delivery</a></li>
+                  <li><a href="#">Change and return</a></li>
+                  <li><a href="#">Terms of purchase</a></li>
+                  <li><a href="#">Privacy statement</a></li>
+                </ul>
+            </div>
+
+            <div class="about-us-footer">
+                <h5>About us</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis debitis perferendis veritatis, impedit provident pariatur nam, dolore magnam aut officiis unde sequi dolorem voluptatibus consequuntur odio alias fuga rem nihil.</p>
+                <a href="aboutUs.html" class="cta-more" class="footer-read-more">READ MORE</a>
+            </div>
+
+            <div class="footer_update">
+                <h5>Keep yourself updated</h5>
+                <p>Promotions, new products and sales. Directly in your inbox.</p>
+
+                <form method="POST" id="newsletterForm">
+                    <label>Your email</label>
+                    <input type="email" id="email" required/>
+                    <button>subscribe</button>
+                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                </form>
+
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+
+            <div class="copyright-footer">
+                Rainydays &copy; 2021
+            </div>
+            <div class="footer-logo">
+                <a href="index.html"><img src="Images/RainyDays_Logo.png" alt="rainydays logo" class="logo"></a>
+            </div>
+        </div>
+        </footer>
+        <script src="js/contactUs.js"></script>
+    </body>
+</html>

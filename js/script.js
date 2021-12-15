@@ -73,7 +73,7 @@ for(let i = 0; i < productData.length; i++) {
     <div>
     <p>${sex}<p>
     <h4>${name}<h4>
-    <p>${price}<p>
+    <p>Nok ${price}<p>
     </div>
 
     <div class="likeCta">
@@ -82,7 +82,6 @@ for(let i = 0; i < productData.length; i++) {
     </div>
     `;
 }
-
 
 const seeMoreBtn = document.querySelector(".seeMoreBtn"); 
 
@@ -97,8 +96,6 @@ const emailError = document.querySelector("#emailError");
 
 function validateNewsletter() {
     event.preventDefault; 
-    console.log("hello");
-
     if(validateEmail(email.value) === true){
         emailError.style.display = "none";
     } else {
@@ -108,11 +105,8 @@ function validateNewsletter() {
 
 newsletterForm.addEventListener("subscribe", validateNewsletter); 
 
-function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/; 
-    const patternMatches = regEx.test(email); 
-    return patternMatches;
+const addToCartBtn = document.querySelector("#addToCart"); 
+
+addToCartBtn.onclick = function() {
+    addToCartBtn.innerHTML = `Added to bag`; 
 }
-
-
-
