@@ -8,12 +8,4 @@ setTimeout(function() {
     contactUsContainer.style.display = "";
 },400);
 
-const checkoutSuccessContainer = document.querySelector(".Checkout-success-main"); 
-
-checkoutSuccessContainer.style.display = "none"; 
-
-setTimeout(function() {
-    loader.className = "hidden";
-    checkoutSuccessContainer.style.display = "";
-}, 400);
 

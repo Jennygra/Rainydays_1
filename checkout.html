@@ -22,7 +22,6 @@
           </section>
 
   <section class="checkout-container">
-    <div class="checoutFormError"></div>
           <section class="custom-form">
             <form method="POST" class="checkoutForm">
 
@@ -34,25 +33,39 @@
 
             <div class="shipping-info">
                 <h4>Shipping address</h4>
-                <input name="fname" id="fname" placeholder="First name*" class="input-fname">
-                <div class="errorMessage" id="fnameError">Please enter your first name</div>
+                <div class="fnameContainer">
+                  <input name="fname" id="fname" placeholder="First name*" class="input-fname">
+                  <div class="errorMessage" id="fnameError">Please enter your first name</div>
+                </div>
 
-                <input name="lname" id="lname" placeholder="Last name*" class="input-lname">
-                <div class="errorMessage" id="lnameError">Please enter your last name</div>
+                <div class="lnameContainer">
+                  <input name="lname" id="lname" placeholder="Last name*" class="input-lname">
+                  <div class="errorMessage" id="lnameError">Please enter your last name</div>
+                </div>
 
-                <input name="address" id="address" placeholder="Street Address*" class="input-address">
-                <div class="errorMessage" id="addressError">Please enter correct address</div>
+                <div class="addressContainer">
+                  <input name="address" id="address" placeholder="Street Address*" class="input-address">
+                  <div class="errorMessage" id="addressError">Please enter correct address</div>
+                </div>
 
-                <input name="city" id="city" placeholder="Town / City*" class="input-town">
-                <div class="errorMessage" id="cityError">Please enter your town</div>
+                <div class="cityContainer">
+                  <input name="city" id="city" placeholder="Town / City*" class="input-town">
+                  <div class="errorMessage" id="cityError">Please enter your town</div>
+                </div>
 
-                <input name="zip" id="zip" placeholder="Postcode*" class="input-postcode">
-                <div class="errorMessage" id="zipError">Your postcode is incorrect</div>
+                <div class="zipContainer">
+                  <input name="zip" id="zip" placeholder="Postcode*" class="input-postcode">
+                  <div class="errorMessage" id="zipError">Your postcode is incorrect</div>
+                </div>
 
-                <input name="country" id="country" placeholder="Country*" class="input-country">
-                <div class="errorMessage" id="countryError">Please enter correct country</div>
+                <div class="countryContainer">
+                  <input name="country" id="country" placeholder="Country*" class="input-country">
+                  <div class="errorMessage" id="countryError">Please enter correct country</div>
+                </div>
 
-                <input type="text" id="state" placeholder="State" class="input-state">
+                <div class="stateContainer">
+                  <input type="text" id="state" placeholder="State" class="input-state">
+                </div>
 
                 <div class="checkbox-billing">
                   <input type="checkbox" id="billingaddress" name="billingaddress" placeholder="Use different billing address" class="input-billingaddress">
@@ -60,7 +73,9 @@
                   <label for="billingaddress" class="billing-label">Use different billing address</label>
                 </div>
 
-                <input type="text" id="phone number" placeholder="Phone (optional)" class="input-phone">
+                <div class="phoneContainer">
+                   <input type="text" id="phone number" placeholder="Phone (optional)" class="input-phone">
+                </div>
             </div>
 
             <div class="cta-to-shipping">

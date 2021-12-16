@@ -69,11 +69,14 @@ function validateCheckout() {
 
 const continueBtn = document.querySelector(".cta-to-shipping"); 
 
-const checoutFormError = document.querySelector(".checoutFormError"); 
+continueBtn.onclick = function() {
+    if(!validateCheckout()) {
+        return false; 
+    } else {
+        window.location.href = "checkoutSuccess.html"
+    }
+} 
 
-continueBtn.onclick = function() { 
-    validateCheckout()
-}
 
 
 
