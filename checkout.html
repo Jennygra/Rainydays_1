@@ -22,43 +22,43 @@
           </section>
 
   <section class="checkout-container">
+    <div class="checoutFormError"></div>
           <section class="custom-form">
             <form method="POST" class="checkoutForm">
 
             <div class="custom-information">
                 <h4> Custom information</h4>
-                <input type="email" id="emailCheckout" required placeholder="Email*" required>
+                <input name="email" id="emailCheckout" placeholder="Email*">
                 <div class="errorMessage" id="emailCheckoutError">Please enter a valid email address</div>
-                </div>
             </div>
 
             <div class="shipping-info">
                 <h4>Shipping address</h4>
-                <input type="text" id="fname" placeholder="First name*" class="input-fname" required>
+                <input name="fname" id="fname" placeholder="First name*" class="input-fname">
                 <div class="errorMessage" id="fnameError">Please enter your first name</div>
 
-                <input type="text" id="lname" placeholder="Last name*" class="input-lname" required>
+                <input name="lname" id="lname" placeholder="Last name*" class="input-lname">
                 <div class="errorMessage" id="lnameError">Please enter your last name</div>
 
-                <input type="text" id="address" placeholder="Street Address*" class="input-address" required>
+                <input name="address" id="address" placeholder="Street Address*" class="input-address">
                 <div class="errorMessage" id="addressError">Please enter correct address</div>
 
-                <input type="text" id="city" placeholder="Town / City*" class="input-town"required>
+                <input name="city" id="city" placeholder="Town / City*" class="input-town">
                 <div class="errorMessage" id="cityError">Please enter your town</div>
 
-                <input type="text" id="zip" placeholder="Postcode*" class="input-postcode" required>
+                <input name="zip" id="zip" placeholder="Postcode*" class="input-postcode">
                 <div class="errorMessage" id="zipError">Your postcode is incorrect</div>
 
-                <input type="text" id="country" placeholder="Country*" class="input-country" required>
+                <input name="country" id="country" placeholder="Country*" class="input-country">
                 <div class="errorMessage" id="countryError">Please enter correct country</div>
 
                 <input type="text" id="state" placeholder="State" class="input-state">
 
-              <div class="checkbox-billing">
-                <input type="checkbox" id="billingaddress" name="billingaddress" placeholder="Use different billing address" class="input-billingaddress">
+                <div class="checkbox-billing">
+                  <input type="checkbox" id="billingaddress" name="billingaddress" placeholder="Use different billing address" class="input-billingaddress">
 
-                <label for="billingaddress" class="billing-label">Use different billing address</label>
-              </div>
+                  <label for="billingaddress" class="billing-label">Use different billing address</label>
+                </div>
 
                 <input type="text" id="phone number" placeholder="Phone (optional)" class="input-phone">
             </div>
@@ -66,7 +66,7 @@
             <div class="cta-to-shipping">
                 <button><a href="checkoutSuccess.html">Continue to shipping</a></button>
             </div>
-            </form>
+          </form>
         </section>
 
       <section class="summary-container">
@@ -104,19 +104,19 @@
             </section>
       </section>
     </section>
-    </main>
+  </main>
 
-        <footer class="terms-rights">
-              <div class="footer-terms">
-                <a href="#">Refund policy</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Terms of service</a>
-              </div>
-              <div class="footer-rights">
-                Copyright &copy; 2021 RainydaysCheckout - All Rights Reserved 
-              </div>
-            </footer>
-            <script src="js/formValidation.js"></script>
-            <script src="js/script.js"></script>
-    </body>
+  <footer class="terms-rights">
+  <div class="footer-terms">
+    <a href="#">Refund policy</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms of service</a>
+  </div>
+  <div class="footer-rights">
+    Copyright &copy; 2021 RainydaysCheckout - All Rights Reserved 
+  </div>
+  </footer>
+  <script src="js/checkoutForm.js"></script>
+  <script src="js/validation.js"></script>
+  </body>
 </html>

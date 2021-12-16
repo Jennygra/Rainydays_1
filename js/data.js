@@ -82,31 +82,3 @@ for(let i = 0; i < productData.length; i++) {
     </div>
     `;
 }
-
-const seeMoreBtn = document.querySelector(".seeMoreBtn"); 
-
-seeMoreBtn.onclick = function() {
-    location.href="collection.html";
-}
-
-const newsletterForm = document.querySelector("#newsletterForm"); 
-
-const email = document.querySelector("#email"); 
-const emailError = document.querySelector("#emailError"); 
-
-function validateNewsletter() {
-    event.preventDefault; 
-    if(validateEmail(email.value) === true){
-        emailError.style.display = "none";
-    } else {
-        emailError.style.display = "block";
-    }
-}
-
-newsletterForm.addEventListener("subscribe", validateNewsletter); 
-
-const addToCartBtn = document.querySelector("#addToCart"); 
-
-addToCartBtn.onclick = function() {
-    addToCartBtn.innerHTML = `Added to bag`; 
-}

@@ -66,12 +66,12 @@
 
             <section class="shop-men-women-container">
                 <div class="shop-men-women">
-                    <a href="mens.html"><img src="images/home-page-img/homepage-shop-men.jpg" alt="shop men"></a>
-                    <p><a href="#">shop men</a></p>
+                    <a href="collection.html"><img src="images/home-page-img/homepage-shop-men.jpg" alt="shop men"></a>
+                    <p><a href="collection.html">shop men</a></p>
                 </div>
                 <div class="shop-men-women">
-                    <a href="mens.html"><img src="images/home-page-img/homepage-shop-women.jpg" alt="shop women"></a>
-                    <p><a href="#">shop women</a></p>
+                    <a href="collection.html"><img src="images/home-page-img/homepage-shop-women.jpg" alt="shop women"></a>
+                    <p><a href="collection.html">shop women</a></p>
                 </div>
             </section>
 
@@ -82,8 +82,11 @@
             <section class="homepage-feature-collection-container">
                 <h3>Our favorite</h3>
             </section>
+
             <div class="feature-collectionCta">
+                <a href="collection.html">
                 <button class="seeMoreBtn">See more</button>
+                </a>
             </div>
             
         </main>
@@ -127,10 +130,12 @@
                 <p>Promotions, new products and sales. Directly in your inbox.</p>
 
                 <form method="POST" id="newsletterForm">
-                    <label>Your email</label>
-                    <input type="email" id="email" required/>
-                    <button>subscribe</button>
-                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    <label>Your email
+                    <input name="email" id="newsletter"/>
+                    </label>
+                    <div class="error-message" id="newsletterError">Please enter a valid email address</div>
+
+                    <button class="subscribe">subscribe</button>
                 </form>
 
                 <i class="fab fa-facebook-square"></i>
@@ -146,8 +151,9 @@
             </div>
         </div>
         </footer>
-        <script src="js/formValidation.js"></script>
-        <script src="js/components/likeCta.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/components/buttons.js"></script>
+        <script src="js/newsLetter.js"></script>
+        <script src="js/validation.js"></script>
+        <script src="js/data.js"></script>
     </body>
 </html>

@@ -325,7 +325,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .shop-men-women-container {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1em;
   }
 
@@ -387,6 +387,10 @@ h2 {
 
 .feature-collection img {
   max-width: 200px;
+}
+
+.likeCta img {
+  max-width: 25px;
 }
 
 .seeMoreBtn {
@@ -473,7 +477,13 @@ h2 {
   margin: 2em;
 }
 
-.custome-ratings h4 {
+.ratings-comments h3 {
+  max-width: 100px;
+  margin: auto;
+}
+
+.custome-ratings h4,
+.ratings-comments h3 {
   margin-right: 1em;
   font: normal normal bold 35px/41px Roboto Condensed;
   color: #0a3641;
@@ -599,8 +609,13 @@ h2 {
     display: none;
   }
 
-  .custome-ratings h4 {
-    font: normal normal bold 30px/36px Roboto Condensed;
+  .custome-ratings h4,
+  .ratings-comments h3 {
+    font-size: 30px;
+  }
+
+  .ratings-comments h3 {
+    justify-content: center;
   }
 
   .custome-ratings p {
@@ -689,7 +704,7 @@ h2 {
   }
 
   .review-container {
-    margin-top: 3em;
+    margin-top: 5em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -719,17 +734,24 @@ h2 {
 }
 
 /* Contact us */
+.contact-us-h1 {
+  max-width: 500px;
+  margin: 0em auto 1em;
+}
 
 .contact-us-h1 h1 {
   font: normal normal bold 40px/51px Roboto Condensed;
   color: #0a3641;
 }
 
+.contact-us-container {
+  margin-bottom: 10em;
+}
+
 .contact-us-form-container fieldset {
   border: 2px solid var(--unnamed-color-0a3641);
   box-shadow: 0px 3px 6px #de7c4480;
   border: 2px solid #0a3641;
-  margin: 1em 0em;
 }
 .contact-us-form-container input {
   margin: 1em;
@@ -743,8 +765,8 @@ h2 {
 .contact-us-cta button {
   border: 3px solid #de7c44;
   color: #de7c44;
-  padding: 1em;
-  font: normal normal bold 22px/25px Roboto Condensed;
+  padding: 5px 10px;
+  font: normal normal bold 12px/15px Roboto Condensed;
   margin-top: 3em;
   text-transform: uppercase;
 }
@@ -777,6 +799,7 @@ h2 {
   display: none;
   font-size: 10px;
   color: red;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -815,8 +838,16 @@ h2 {
     margin-left: 1em;
   }
 
+  .contact-us-form-container {
+    margin-bottom: 1em;
+  }
+
   .contact-us-info i {
     margin: 1em;
+  }
+
+  .contact-us-container {
+    margin-bottom: 0;
   }
 }
 
