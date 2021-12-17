@@ -24,59 +24,67 @@ const countryError = document.querySelector("#countryError");
 function validateCheckout() {
     event.preventDefault(); 
 
+    let isValidated = true; 
+
     if(validateEmail(emailCheckout.value) === true){
         emailCheckoutError.style.display = "none"; 
     } else {
         emailCheckoutError.style.display = "block"; 
+        isValidated = false;
     }
 
     if(formChecker(fname.value,0) === true){
         fnameError.style.display = "none"; 
     } else {
         fnameError.style.display = "block"; 
+        isValidated = false;
     }
 
     if(formChecker(lname.value,0) === true){
         lnameError.style.display = "none"; 
     } else {
         lnameError.style.display = "block"; 
+        isValidated = false;
     }
 
     if(formChecker(address.value,10) === true){
         addressError.style.display = "none"; 
     } else {
         addressError.style.display = "block"; 
+        isValidated = false;
     }
 
     if(formChecker(city.value,2) === true){
         cityError.style.display = "none"; 
     } else {
         cityError.style.display = "block"; 
+        isValidated = false;
     }
 
     if(formChecker(zipCode.value,3) === true){
         zipCodeError.style.display = "none"; 
     } else {
         zipCodeError.style.display = "block"; 
+        isValidated = false;
     }
 
     if(formChecker(country.value,3) === true){
         countryError.style.display = "none"; 
     } else {
         countryError.style.display = "block"; 
+        isValidated = false;
     }
+
+    return isValidated; 
 }
 
-const continueBtn = document.querySelector(".cta-to-shipping"); 
-
-continueBtn.onclick = function() {
+function myFunction() {
     if(!validateCheckout()) {
         return false; 
     } else {
         window.location.href = "checkoutSuccess.html"
     }
-} 
 
-
+}
 
 
