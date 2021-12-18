@@ -11,26 +11,43 @@ const messageError = document.querySelector("#messageError");
 
 function validateForm() {
     event.preventDefault(); 
+
+    let isValidated = true;
     
     if(formChecker(name.value,2) === true) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
+        isValidated = false;
     }
 
     if(validateEmail(email.value) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
+        isValidated = false;
     }
 
     if(formChecker(message.value,5) === true) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
+        isValidated = false;
     }
+
+    return isValidated; 
 }
 
-contactForm.addEventListener("submit", validateForm); 
+const sumbmitBtn = document.querySelector(".sumbmitBtn");
+
+function btnFunctionForm() {
+    console.log("hello")
+    if(!validateForm()) {
+        return false; 
+    } else {
+        alert("Thank you for contacting us, we will come back to you within two days!");
+        window.location.href = "contactUs.html"
+    }
+}
 
 

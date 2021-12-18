@@ -84,7 +84,6 @@ function myFunction() {
     } else {
         window.location.href = "checkoutSuccess.html"
     }
-
 }
 
 

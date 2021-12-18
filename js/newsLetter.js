@@ -1,23 +1,33 @@
 //Newsletter form
 const newsletterForm = document.querySelector("#newsletterForm"); 
-const email = document.querySelector("#newsletter"); 
-const emailError = document.querySelector("#newsletterError"); 
+const emailNewsletter = document.querySelector("#emailNewsletter"); 
+const emailErrorNewsletter = document.querySelector("#emailErrorNewsletter"); 
 
 function validateNewsletter() {
     event.preventDefault; 
-    if(validateEmail(email.value) === true){
+
+    let isValidated = true; 
+
+    if(validateEmail(emailNewsletter.value) === true){
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
+        isValidated = false;
     }
+
+    return isValidated; 
 }
 
-const subscribe = document.querySelector(".subscribe"); 
-
-subscribe.onclick = function() {
-    event.preventDefault; 
-    
-    validateNewsletter();
-}
+newsletterForm.addEventListener("subscribe", validateNewsletter); 
 
 
+// const newsletterContainer = document.querySelector(".footer_update");
+
+// function newsletterBtnFunction() {
+//     if(!validateNewsletter()) {
+//         return false; 
+//     } else {
+//         console.log("hello");
+//         newsletterForm.innerHTML = "<div>Submitted</div>";
+//     }
+// }

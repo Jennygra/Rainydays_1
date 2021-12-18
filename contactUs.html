@@ -39,6 +39,8 @@
              </div>
           
              <div class="loader"></div>
+
+             <div class="formSuccessMsg"></div>
           
            <section class="contact-us-container">
           
@@ -71,7 +73,7 @@
               </div>
           
               <div class="contact-us-cta">
-              <button>Submit</button>
+              <button class="sumbmitBtn" onclick="btnFunctionForm()">Submit</button>
               </div>
                 </fieldset>
               </form>
@@ -136,10 +138,11 @@
                 <p>Promotions, new products and sales. Directly in your inbox.</p>
 
                 <form method="POST" id="newsletterForm">
-                    <label>Your email</label>
-                    <input type="email" id="email" required/>
-                    <button>subscribe</button>
-                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    <label>Your email
+                    <input type="email" id="emailNewsletter"/>
+                    </label>
+                    <button onclick="newsletterBtnFunction()">subscribe</button>
+                    <div class="error-message" id="emailErrorNewsletter">Please enter a valid email address</div>
                 </form>
 
                 <i class="fab fa-facebook-square"></i>
@@ -155,8 +158,9 @@
             </div>
         </div>
         </footer>
-        <script src="js/components/loading.js"></script>
         <script src="js/validation.js"></script>
+        <script src="js/newsLetter.js"></script>
         <script src="js/contactUsForm.js"></script>
+        <script src="js/components/loading.js"></script>
     </body>
 </html>

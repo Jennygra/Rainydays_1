@@ -1067,8 +1067,12 @@ h2 {
 }
 
 .cta-to-shipping button {
-  background: #0a3641 0% 0% no-repeat padding-box;
-  border: 5px solid #0b313b;
+  background: #187a93;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  text-transform: uppercase;
+  font: normal normal bold 12px/15px Roboto Condensed;
 }
 
 .cta-to-shipping a {
