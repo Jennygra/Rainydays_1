@@ -64,28 +64,37 @@
                     <img src="Images/ratingStars.png" alt="ratings">
                   </div>
 
+                <div class="selection">
                   <div class="color-choices">
-                    <p>Color:</p>
-                    <img src="Images/Colors/blue.png" alt="Dark Blue">
-                    <img src="Images/Colors/Toirquiz.png" alt="Toirquiz">
-                    <img src="Images/Colors/Orange.png" alt="Orange">
-                    <img src="Images/Colors/Yellow.png" alt="Yellow">
+                    <label for="color">Select color:</label>
+                    <select name="colors" id="colorSelect">
+                      <option value="0">---------</option>
+                      <option value="1">Dark Blue</option>
+                      <option value="2">Toirquiz</option>
+                      <option value="3">Orange</option>
+                      <option value="4">Yellow</option>
+                    </select>
+                    <div class="error-message" id="colorError">Please choose a color</div>
                   </div>
 
                   <div class="size-choices">
-                      <p>Size:</p>
-                    <ul>
-                      <li>xs</li>
-                      <li>s</li>
-                      <li>m</li>
-                      <li>l</li>
-                      <li>xl</li>
+                    <label for="size">Select size:</label>
+                    <select name="size" id="sizeSelect">
+                      <option value="0">---------</option>
+                      <option value="1">XS</option>
+                      <option value="2">S</option>
+                      <option value="3">M</option>
+                      <option value="4">L</option>
+                      <option value="5">XL</option>
+                    </select>
+                      <div class="error-message" id="sizeError">Please choose size</div>
                     </ul>
                     <a href="#">Size Guide</a>
                   </div>
+                </div>
 
                   <div class="cta-product-info">
-                    <a id="addToCart">Add to bag</a>
+                    <a id="addToCart" onclick="addToCart()">Add to bag</a>
                     <a href="cart.html">buy now</a>
                   </div>
 
@@ -200,7 +209,6 @@
         </div>
         </footer>
         <script src="js/components/buttons.js"></script>
-        <script src="js/components/likeCta.js"></script>
         <script src="js/newsLetter.js"></script>
         <script src="js/data.js"></script>
     </body>

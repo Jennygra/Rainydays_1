@@ -478,6 +478,77 @@ h2 {
   color: white;
 }
 
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.selection select {
+  background-color: transparent;
+  border: solid 1px lightgrey;
+  width: 100%;
+}
+
+.selection label {
+  font: normal normal bold 10px/13px Roboto;
+}
+
+/* .color-choices,
+.size-choices {
+  position: relative;
+}
+
+.color-choices select,
+.size-choices select {
+  display: none;
+}
+
+.select-selected {
+  background: white;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: solid 2px #0a3641;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: #187a93;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  color: white;
+  padding: 8px 16px;
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #0c3d4a;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: lightblue;
+} */
+
 .product-description p {
   font: normal normal normal 16px/22px Roboto Condensed;
   color: #0a3641;
@@ -546,15 +617,6 @@ h2 {
   padding: 5px;
 }
 
-.color-choices img {
-  padding: 20px;
-  width: 50px;
-}
-
-.color-choices img:hover {
-  border: 1px solid #707070;
-}
-
 @media screen and (max-width: 768px) {
   .product-specific {
     display: flex;
@@ -573,6 +635,10 @@ h2 {
     height: auto;
   }
 
+  .selection {
+    margin-bottom: 2em;
+  }
+
   .product-info {
     margin: 10px;
   }
@@ -584,28 +650,6 @@ h2 {
 
   .product-info img {
     display: none;
-  }
-
-  .color-choices {
-    margin: 2em 2px;
-  }
-
-  .color-choices img {
-    max-width: 30px;
-    margin: 0px 3px;
-  }
-
-  .size-choices {
-    margin: 2em 1px;
-  }
-
-  .size-choices li {
-    font: normal normal bold 14px/17px Roboto Condensed;
-    text-transform: uppercase;
-  }
-
-  .size-choices li:hover {
-    text-decoration: underline;
   }
 
   .color-choices p,
@@ -698,6 +742,11 @@ h2 {
   .product-info-container {
     margin: 0em 10em;
     width: 700px;
+  }
+
+  .selection {
+    display: block;
+    margin-top: 5em;
   }
 
   .product-info,
