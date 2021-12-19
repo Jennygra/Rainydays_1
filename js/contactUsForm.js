@@ -45,7 +45,7 @@ function btnFunctionForm() {
     if(!validateForm()) {
         return false; 
     } else {
-        contactForm.innerHTML = `<div><h3> Thank you for contacting us, we will come back to you within two days!</div></h3>`;
+        contactForm.innerHTML = `<div class="submitMsg"><h3> Thank you for contacting us, we will come back to you within two days!</div></h3>`;
         // alert("Thank you for contacting us, we will come back to you within two days!");
         // window.location.href = "contactUs.html"
     }

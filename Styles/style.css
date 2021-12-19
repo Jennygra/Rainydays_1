@@ -871,6 +871,10 @@ h2 {
   margin: 100px auto;
 }
 
+.submitMsg {
+  margin: 5em 0em;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(90deg);
@@ -933,6 +937,13 @@ h2 {
 
   .contact-us-container {
     margin-bottom: 0;
+  }
+
+  .submitMsg {
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 3em 0em;
   }
 }
 
