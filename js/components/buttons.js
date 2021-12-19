@@ -38,6 +38,14 @@ function addToCart() {
     }
 }
 
+function buyNow() {
+    if(!productSelection()) {
+        return false; 
+    } else {
+        location.href = "cart.html";
+    }
+}
+
 
 
 // //Collection page 
