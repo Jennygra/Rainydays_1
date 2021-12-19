@@ -53,6 +53,7 @@ nav li {
 
 .navigation {
   margin: 20px;
+  display: flex;
 }
 
 .header-icons {
@@ -77,8 +78,16 @@ nav li {
     display: none;
   }
 
+  .navigation {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .cartMobile img {
+    max-width: 80%;
+  }
+
   .hamburger-label {
-    float: right;
     color: #0a3641;
     padding: 6px;
     display: block;
@@ -87,6 +96,10 @@ nav li {
 
   #hamburger-menu:checked ~ nav {
     display: block;
+  }
+
+  nav {
+    flex-basis: 100%;
   }
 
   nav ul {
@@ -104,12 +117,9 @@ nav li {
 
 @media screen and (min-width: 769px) {
   .hamburger-label,
-  #hamburger-menu {
+  #hamburger-menu,
+  .cartMobile {
     display: none;
-  }
-
-  .navigation {
-    display: flex;
   }
 }
 
@@ -500,9 +510,13 @@ h2 {
 
 .custome-ratings h4,
 .ratings-comments h3 {
-  margin-right: 1em;
   font: normal normal bold 35px/41px Roboto Condensed;
   color: #0a3641;
+}
+
+.custome-ratings h4 {
+  margin-right: 1em;
+  flex-basis: 100%;
 }
 
 .product-info p {
@@ -627,7 +641,7 @@ h2 {
 
   .custome-ratings h4,
   .ratings-comments h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .ratings-comments h3 {
@@ -636,10 +650,11 @@ h2 {
 
   .custome-ratings p {
     color: black;
+    font-size: 12px;
   }
 
   .ratings-stars {
-    max-width: 100px;
+    max-width: 50%;
     height: auto;
     margin: 0px 5px;
   }
