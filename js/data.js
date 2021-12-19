@@ -77,7 +77,7 @@ for(let i = 0; i < productData.length; i++) {
     </div>
 
     <div class="likeCta">
-    <img src="Images/home-page-img/Like-button-default.png" alt="Like button">
+    <i onclick="liked(this)" class="far fa-heart" id="likeIcon"></i>
     </div>
     </div>
     `;

@@ -1,6 +1,12 @@
-const likeBtnContainer = document.querySelector(".likeCta"); 
+// const likeIcon = document.querySelector("#likeIcon"); 
 
-likeBtnContainer.onclick = function() {
-    console.log("hello");
-    likeBtnContainer.innerHTML += `<img src="Images/home-page-img/Like-button-hover.png" alt="Liked">`;
+// likeIcon.addEventListener('click',liked);
+
+// function liked() {
+//     console.log("hello");
+//     likeIcon.innerHTML += `<i class="fas fa-heart"></i>`;
+// }
+
+let liked = function(icon) {
+    icon.classList.toggle('fas fa-heart');
 }
