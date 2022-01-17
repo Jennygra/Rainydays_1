@@ -1,4 +1,4 @@
-const url = "http://localhost:8888/wp-json/wc/store/products"; 
+const url = "http://jennygramdal.com/rainydays/wp-json/wc/store/products"; 
 const featureProductContainer = document.querySelector(".homepage-feature-collection-container"); 
 
 async function getProducts(){
