@@ -2,7 +2,7 @@ const url = "https://jennygramdal.com/rainydays/wp-json/wc/store/products";
 const featureProductContainer = document.querySelector(".homepage-feature-collection-container"); 
 const featureCollectionCta = document.querySelector(".feature-collectionCta");
 
-async function getProducts(){
+async function getProducts() {
     try{
         const response = await fetch(url); 
         const getResults = await response.json(); 
@@ -16,10 +16,10 @@ async function getProducts(){
 
 getProducts();
 
-function createHTML(products){
-    products.forEach(function(product){
+function createHTML(products) {
+    products.forEach(function(product) {
         featureProductContainer.innerHTML += `
-            <div class="feature-collection">
+            <a href="product.html?id=${products.id}" class="feature-collection">
             <img src="${product.images[0].src}" alt="${product.images[0].alt}">
         
             <div>
@@ -31,7 +31,7 @@ function createHTML(products){
             <div class="likeCta">
             <i onclick="liked(this)" class="far fa-heart" id="likeIcon"></i>
             </div>
-            </div>
+            </a>
             `;
     });
 }
