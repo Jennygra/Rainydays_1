@@ -3,7 +3,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id"); 
 const productIdURL = "https://jennygramdal.com/rainydays/wp-json/wc/store/products/" + id; 
 
-const productDetailsContainer = document.querySelector(".product-specific-main"); 
+const productDetailsContainer = document.querySelector(".product-specific"); 
 
 console.log(id);
 
@@ -12,11 +12,17 @@ async function productId() {
         const response = await fetch(productIdURL); 
         const results = await response.json; 
 
+        newHTML(results);
+
         console.log(results);
 
     } catch(error) {
-        console.log("error"); 
+        console.log("Ops! An error occurred"); 
     }
 }
 
 productId()
+
+function newHTML() {
+
+}
