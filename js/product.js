@@ -26,12 +26,10 @@ productId()
 
 function newHTML() {
     productDetailsContainer.innerHTML += `
-        <section class="product-specific">
-            <div class="blue-jacket-img-thumbnails-1"> 
+        <div class="blue-jacket-img-thumbnails-1"> 
             <img src="${product.images[0].src}" alt="${product.images[0].alt}">
             </div>
         </div>
-        </section>
     `; 
 
     productInfoContainer.innerHTML += `
