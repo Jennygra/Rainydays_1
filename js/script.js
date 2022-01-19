@@ -1,15 +1,16 @@
-const url = "http://jennygramdal.com/rainydays/wp-json/wc/store/products"; 
+const url = "https://jennygramdal.com/rainydays/wp-json/wc/store/products"; 
 const featureProductContainer = document.querySelector(".homepage-feature-collection-container"); 
+const featureCollectionCta = document.querySelector(".feature-collectionCta");
 
 async function getProducts(){
     try{
         const response = await fetch(url); 
         const getResults = await response.json(); 
         createHTML(getResults);
-    } 
-
-    catch(error) {
-        console.log("This is an error");
+    } catch(error) {
+        console.log("Ops! An error occurred");
+        featureProductContainer.innerHTML = "";
+        featureCollectionCta.innerHTML = "";
     }
 }
 
