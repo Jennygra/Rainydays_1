@@ -23,7 +23,7 @@ function createHTML(products) {
             <img src="${product.images[0].src}" alt="${product.images[0].alt}">
         
             <div>
-            <p>${product.categories.name}<p>
+            <p>${product.categories[2].name}<p>
             <h4>${product.name}<h4>
             <p>Nok ${product.prices.price}<p>
             </div>
