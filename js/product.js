@@ -6,6 +6,7 @@ const productIdURL = "https://jennygramdal.com/rainydays/wp-json/wc/store/produc
 
 const productDetailsContainer = document.querySelector(".product-specific"); 
 const productInfoContainer = document.querySelector(".product-info"); 
+const productDescription = document.querySelector(".product-description"); 
 
 async function productId() {
     try {
@@ -13,6 +14,8 @@ async function productId() {
         const results = await response.json(); 
 
         newHTML(results);
+
+        console.log(results);
 
     } catch(error) {
         console.log("Ops! An error occurred"); 
@@ -37,4 +40,8 @@ function newHTML(results) {
         <p>Nok ${results.prices.price}</p>
         <img src="Images/ratingStars.png" alt="ratings">
     `;
+
+    productDescription.innerHTML += `
+        <p>${results.description}</p>
+    `; 
 }
