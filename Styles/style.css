@@ -259,6 +259,11 @@ h1 {
   margin: auto;
 }
 
+.feature-collection {
+  text-decoration: none;
+  color: #0a3641;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     display: none;
