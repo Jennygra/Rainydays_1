@@ -15,8 +15,6 @@ async function productId() {
 
         newHTML(results);
 
-        console.log(results);
-
     } catch(error) {
         console.log("Ops! An error occurred"); 
     }
