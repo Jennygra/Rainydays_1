@@ -1,21 +1,25 @@
+
 const queryString = document.location.search; 
 const params = new URLSearchParams(queryString); 
 const id = params.get("id"); 
-const productIdURL = "https://jennygramdal.com/rainydays/wp-json/wc/store/products/" + id; 
+const productIdURL = "https://jennygramdal.com/rainydays/wp-json/wc/store/products?id=" + id; 
+
+console.log(productIdURL);
 
 const productDetailsContainer = document.querySelector(".product-specific"); 
 const productInfoContainer = document.querySelector(".product-info"); 
 
-console.log(id);
-
 async function productId() {
     try {
-        const response = await fetch(productIdURL); 
-        const results = await response.json; 
+        const response = await fetch(url); 
+        const results = await response.json(); 
 
-        newHTML(results);
+        // for(let i = 0; i < results.length; i++) {
+        //     const productById = results[i].id; 
 
-        console.log(results);
+        //     console.log(productById);
+        //     newHTML();
+        // }
 
     } catch(error) {
         console.log("Ops! An error occurred"); 
