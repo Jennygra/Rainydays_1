@@ -12,8 +12,6 @@ async function productId() {
         const response = await fetch(productIdURL); 
         const results = await response.json(); 
 
-        console.log(results);
-
         newHTML(results);
 
     } catch(error) {
