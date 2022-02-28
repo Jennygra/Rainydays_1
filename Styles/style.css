@@ -67,6 +67,11 @@ nav li {
   padding: 10px;
 }
 
+.active {
+  color: #187a93;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .header_logo {
     max-width: 90px;
