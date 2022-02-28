@@ -8,6 +8,6 @@ function formChecker(value,len) {
 
 function validateEmail(email,emailCheckout) {
     const regEx = /\S+@\S+\.\S+/; 
-    const patternMatches = regEx.test(email,emailCheckout); 
+    const patternMatches = regEx.test(email,emailCheckout,emailNewsletter); 
     return patternMatches;
 }

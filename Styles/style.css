@@ -26,6 +26,7 @@ h5 h6 {
   max-width: 110px;
   height: auto;
   justify-content: space-evenly;
+  margin-right: 2em;
 }
 
 nav ul {
@@ -169,6 +170,7 @@ h5 {
 
 .custom-service-options a:hover {
   text-decoration: underline;
+  color: #187a93;
 }
 
 .about-us-footer p,
@@ -179,6 +181,10 @@ h5 {
   color: #0a3641;
 }
 
+.about-us-footer p {
+  margin-bottom: 10px;
+}
+
 .about-us-footer a {
   text-decoration: none;
   border: 2px solid #0a3641;
@@ -186,6 +192,11 @@ h5 {
   color: #0a3641;
   padding: 3px 15px;
   border-radius: 50px;
+}
+
+.about-us-footer a:hover {
+  color: white;
+  background-color: #0c3d4a;
 }
 
 .copyright-footer {
@@ -226,6 +237,29 @@ h5 {
   display: none;
   font-size: 10px;
   color: red;
+}
+
+.footer-icons {
+  text-align: center;
+}
+
+#newsletterError {
+  font-size: 10px;
+  border: darkred 2px solid;
+  background: lightcoral;
+  color: darkred;
+  padding: 5px;
+  text-align: center;
+  margin: -12px;
+}
+
+.newsletter-success-msg {
+  font-size: 10px;
+  border: darkgreen 2px solid;
+  background: lightgreen;
+  color: darkgreen;
+  padding: 5px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -327,14 +361,18 @@ h2 {
   justify-content: space-around;
   margin: 3em 0em;
   padding: 2em;
+  gap: 1em;
 }
 
 .shop-men-women img {
-  max-width: 500px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
 }
 
 .shop-men-women img:hover {
   border: solid 2px #0c3d4a;
+  margin: -2px;
 }
 
 .shop-men-women p {
@@ -408,11 +446,16 @@ h2 {
   text-decoration: underline;
 }
 
+.feature-collectionCta button:hover {
+  background-color: #c4662f;
+}
+
 .feature-collection {
   display: flex;
   flex-wrap: wrap;
   max-width: 200px;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .feature-collection img {
@@ -421,6 +464,7 @@ h2 {
 
 .feature-collection img:hover {
   border: solid 1px #0c3d4a;
+  margin: -1px;
 }
 
 .likeIcon {
@@ -613,12 +657,12 @@ h2 {
 
 .review-cta a {
   margin: 2em;
-  font: normal normal bold 22px/25px Roboto Condensed;
+  font: normal normal bold 18px/20px Roboto Condensed;
   color: #0a3641;
   border: 3px solid #0a3641;
   border-radius: 50px;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 .review-cta a:hover {
@@ -630,6 +674,19 @@ h2 {
 .product-info img {
   float: right;
   padding: 5px;
+}
+
+.custome-ratings img {
+  width: 100%;
+  max-width: 100px;
+  margin-right: 5px;
+}
+
+.comment-carousel-subcontainer {
+  max-height: 450px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -735,13 +792,16 @@ h2 {
 @media screen and (min-width: 769px) {
   .product-specific-main {
     display: flex;
+    flex-wrap: wrap;
     margin: 5em;
   }
 
   .product-specific {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
   }
 
   .blue-jacket-thumbnails-container {
@@ -755,8 +815,9 @@ h2 {
   }
 
   .product-info-container {
-    margin: 0em 10em;
-    width: 700px;
+    width: 100%;
+    width: 500px;
+    margin: auto;
   }
 
   .selection {
@@ -810,6 +871,8 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
+    max-width: 200px;
   }
 
   .custome-ratings {
@@ -825,6 +888,18 @@ h2 {
   .more-comment-cta {
     display: flex;
     justify-content: center;
+  }
+
+  .more-comment-cta img {
+    width: 100%;
+    max-width: 50px;
+    margin-top: 1em;
+  }
+
+  .ratings {
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 10px;
   }
 }
 

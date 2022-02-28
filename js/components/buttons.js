@@ -46,23 +46,17 @@ function buyNow() {
     }
 }
 
+const moreCommentCta = document.querySelector(".more-comment-cta"); 
+const commentCarouselSubcontainer = document.querySelector(".comment-carousel-subcontainer"); 
 
+moreCommentCta.addEventListener("click", function() {
+    commentCarouselSubcontainer.scrollTop += 200; 
+}); 
 
-// //Collection page 
-// const showMoreCollection = document.querySelector("#showMoreCollection"); 
-// const collectionContainer = document.querySelector("#collectionContainer");
-
-// showMoreCollection.addEventListener("click",showMore); 
-
-// function showMore() {
-//     if(collectionContainer.className === "open") {
-//         //Read less
-//         collectionContainer.className = ""; 
-//         showMoreCollection.innerHTML = "Show more"; 
-//     } else {
-//         collectionContainer.className = "open"; 
-//         showMoreCollection.innerHTML = ""; 
-//     }
-// }
-
-
+commentCarouselSubcontainer.addEventListener("scroll", function() {
+    const isScrolling = this.scrollTop; 
+    
+    if(isScrolling === 738) {
+        moreCommentCta.style.display = "none"; 
+    } 
+}); 

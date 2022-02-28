@@ -1,33 +1,35 @@
 //Newsletter form
 const newsletterForm = document.querySelector("#newsletterForm"); 
-const emailNewsletter = document.querySelector("#emailNewsletter"); 
-const emailErrorNewsletter = document.querySelector("#emailErrorNewsletter"); 
+const emailNewsletter = document.querySelector("#newsletter"); 
+const newsletterError = document.querySelector("#newsletterError"); 
 
 function validateNewsletter() {
-    event.preventDefault; 
+    event.preventDefault(); 
 
     let isValidated = true; 
 
     if(validateEmail(emailNewsletter.value) === true){
-        emailError.style.display = "none";
+        newsletterError.style.display = "none";
     } else {
-        emailError.style.display = "block";
+        newsletterError.style.display = "block";
         isValidated = false;
     }
 
     return isValidated; 
 }
 
-newsletterForm.addEventListener("subscribe", validateNewsletter); 
+const newsletterContainer = document.querySelector(".footer_update");
+const submitBtn = document.querySelector(".subscribe");
+
+function newsletterBtnFunction() {
+    if(!validateNewsletter()) {
+        return false; 
+    } else {
+        newsletterForm.innerHTML = `
+        <div class="newsletter-success-msg">Submitted</div>
+        `;
+    }
+}
 
 
-// const newsletterContainer = document.querySelector(".footer_update");
-
-// function newsletterBtnFunction() {
-//     if(!validateNewsletter()) {
-//         return false; 
-//     } else {
-//         console.log("hello");
-//         newsletterForm.innerHTML = "<div>Submitted</div>";
-//     }
-// }
+submitBtn.addEventListener("click", newsletterBtnFunction); 
