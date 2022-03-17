@@ -87,10 +87,17 @@ nav li {
   .navigation {
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0px;
   }
 
   .cartMobile img {
     max-width: 80%;
+  }
+
+  .cartMobile,
+  .hamburger-label,
+  .header_logo {
+    margin: 20px;
   }
 
   .hamburger-label {
@@ -106,14 +113,17 @@ nav li {
 
   nav {
     flex-basis: 100%;
+    position: relative;
   }
 
   nav ul {
-    all: unset;
     display: block;
     list-style: none;
     text-align: center;
     background: #e8f4ff;
+    position: absolute;
+    width: 100%;
+    padding-left: 0px;
   }
 
   nav a {
